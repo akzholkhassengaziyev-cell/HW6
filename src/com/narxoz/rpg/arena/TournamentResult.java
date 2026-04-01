@@ -1,0 +1,22 @@
+package com.narxoz.rpg.arena;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TournamentResult {
+    private String winner;
+    private int rounds;
+    private final List<String> log = new ArrayList<>();
+
+    public void setWinner(String winner) { this.winner = winner; }
+    public void setRounds(int rounds) { this.rounds = rounds; }
+
+    public String getWinner() { return winner; }
+    public int getRounds() { return rounds; }
+
+    public List<String> getLog() { return log; }
+
+    public void addLog(String line) {
+        log.add(line);
+    }
+}
